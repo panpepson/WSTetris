@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Tetris Multiplayer</title>
+    <style>
+        body {
+            background: #000;
+            display: flex;
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .player {
+            flex: 1 1 auto;
+        }
+
+        .player.local canvas {
+            border-color: #fff;
+        }
+
+        canvas {
+            border: solid .2em #707070;
+            height: 80vh;
+        }
+
+        .player-remote {
+            background: rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+  <template id="player-template">
+    <div class="player">
+        <div id="scores">
+            <div id="player-score">Gracz: 0</div>
+            <div id="opponent-score-123">Przeciwnik: 0</div>
+        </div>
+        <canvas class="tetris" width="240" height="400"></canvas>
+    </div>
+</template>
+
+
+    <!--
+    <script src="js/events.js"></script>
+    <script src="js/arena.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/tetris.js"></script>
+    <script src="js/tetris-manager.js"></script>
+    <script src="js/connection-manager.js"></script>
+    <script src="js/main.js"></script>
+   -->   
+    <script src="js/app.js"></script>
+</body>
+</html>
